@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    // target : javascript 버전 설정, ESNext는 가장 최신 버전
+    "target": "ESNext",
+    // module system을 설정한다. ex) CommonJS, ESNext
+    "module": "ESNext",
+    // 컴파일 결과들이 만들어 질 장소를 설정한다.
+    "outDir": "dist",
+    // 얼마나 엄격하게 검사하나
+    "strict": false,
+    // 어떤 모듈로 감지할 것인가 -> 글로버 모듈을 개별 모듈로 변경
+    "moduleDetection": "force"
+  },
+  // ts-node esmodule system으로 실행
+  "ts-node": { "esm": true },
+  // src 경로 아래에 있는 모든 파일을 포함해서 한 번에 컴파일하기
+  "include": ["src"]
+}
